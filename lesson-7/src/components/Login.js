@@ -56,7 +56,7 @@ function Login() {
         <button
           className="button"
           onClick={() => {
-            setItems([...items, username, lastname, city]);
+            setItems([...items, username, lastname, email, city]);
           }}
           //   disabled={!username || !lastname || !email || !city}
         >
