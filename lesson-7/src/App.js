@@ -1,14 +1,15 @@
-import React from "react";
-import Login from "./components/Login";
+import React, { useState } from "react";
+import Form from "./components/Form";
+import Results from "./components/Results";
 
 function App() {
+  const [persons, setPersons] = useState([]);
+
   return (
-    <div>
-      <main className="container">
-        <Login />
-        <div className="friend"></div>
-      </main>
-    </div>
+    <main className="container">
+      <Form setPersons={setPersons} />
+      <Results persons={persons} />
+    </main>
   );
 }
 
